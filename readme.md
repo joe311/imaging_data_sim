@@ -69,9 +69,9 @@ plt.colorbar()
 
 
 
-    
-![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_5_1.png)
-    
+
+![Neuro_imaging_data_sim_novid_5_1](https://github.com/joe311/imaging_data_sim/assets/5285417/b9b075b2-3bfb-44d2-86cd-bbe2ec98c518)
+  
 
 
 ### Have some 'stimuli' and each neuron is tuned to some of the stimuli
@@ -91,7 +91,7 @@ plt.ylabel('Stimulus #');
 
 
     
-![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_7_0.png)
+![Neuro_imaging_data_sim_novid_7_0](https://github.com/joe311/imaging_data_sim/assets/5285417/101ee0ea-fdc1-419f-a1e2-58bc080826c3)
     
 
 
@@ -132,9 +132,7 @@ plt.ylabel('Stimulus repeat #');
 
 
 
-    
-![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_9_1.png)
-    
+![Neuro_imaging_data_sim_novid_9_1](https://github.com/joe311/imaging_data_sim/assets/5285417/c9b4c2a2-6ee9-4933-9e87-8a575419be3d)
 
 
 ### Now convert into a timeseries for each neuron
@@ -173,7 +171,7 @@ plt.ylabel('Time (frame #)');
 
 
     
-![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_11_1.png)
+![Neuro_imaging_data_sim_novid_11_1](https://github.com/joe311/imaging_data_sim/assets/5285417/0cc8fe42-32c2-476f-ba94-d7e2131bc18f)
     
 
 
@@ -208,7 +206,7 @@ plt.axis('off');
 
 
     
-![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_15_0.png)
+![Neuro_imaging_data_sim_novid_15_0](https://github.com/joe311/imaging_data_sim/assets/5285417/1c996ca2-6f0c-417f-a5c2-60165f2fd265)
     
 
 
@@ -227,18 +225,7 @@ HTML(ani.to_html5_video())
 ```
 
 
-```python
-
-```
-
-    [NbConvertApp] Converting notebook Neuro_imaging_data_sim.ipynb to markdown
-    [NbConvertApp] Writing 17442699 bytes to Neuro_imaging_data_sim.md
+https://github.com/joe311/imaging_data_sim/assets/5285417/d534d574-b091-4fe3-9292-1f93207b269b
 
 
-
-```python
-!ls
-```
-
-    Neuro_imaging_data_sim.ipynb  Neuro_imaging_data_sim.md  sample_data
 
