@@ -1,12 +1,15 @@
 # Simulation of functional neuronal data
 ### joe@bi.mpg.de
 
+Run this notebook in colab: https://colab.research.google.com/github/joe311/imaging_data_sim/blob/main/Neuro_imaging_data_sim.ipynb 
+Or run it locally to get full plot outputs 
+
 
 ```python
 import numpy as np
 from scipy import ndimage
 
-%matplotlib notebook
+#%matplotlib notebook
 from matplotlib import pyplot as plt
 import matplotlib.animation as animation
 from IPython.display import HTML
@@ -59,18 +62,16 @@ plt.colorbar()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
-
-<div id='1d67cafd-93dc-4d39-83ef-ab4165b902f4'></div>
+    <matplotlib.colorbar.Colorbar at 0x7b4a680fed10>
 
 
 
 
-
-    <matplotlib.colorbar.Colorbar at 0x7835501d2950>
-
+    
+![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_5_1.png)
+    
 
 
 ### Have some 'stimuli' and each neuron is tuned to some of the stimuli
@@ -89,11 +90,9 @@ plt.ylabel('Stimulus #');
 ```
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-<div id='8606423b-deaa-4042-8c3d-60e7eae6e993'></div>
+    
+![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_7_0.png)
+    
 
 
 ### Each stimulus is repated multiple times
@@ -133,11 +132,9 @@ plt.ylabel('Stimulus repeat #');
 
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-<div id='7be6f3f4-a721-43c1-bbea-33ec5e8cebcf'></div>
+    
+![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_9_1.png)
+    
 
 
 ### Now convert into a timeseries for each neuron
@@ -175,11 +172,9 @@ plt.ylabel('Time (frame #)');
 
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-<div id='e0ab601a-9970-40e2-8a74-04eae6a848dc'></div>
+    
+![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_11_1.png)
+    
 
 
 ### And finally combine the neuron spatial footprints with the timeseries data
@@ -212,11 +207,9 @@ plt.axis('off');
 ```
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-<div id='f1cc0b9e-7aa6-4662-9708-6763cc9b72b4'></div>
+    
+![png](Neuro_imaging_data_sim_novid_files/Neuro_imaging_data_sim_novid_15_0.png)
+    
 
 
 
@@ -229,24 +222,23 @@ def updatefig(currentframe):
     return im,
 
 plt.axis('off')
-ani = animation.FuncAnimation(fig, updatefig, frames=res.shape[0], interval=200, blit=True)
+ani = animation.FuncAnimation(fig, updatefig, frames=res.shape[0], interval=150, blit=True)
 HTML(ani.to_html5_video())
 ```
-
-
-    <IPython.core.display.Javascript object>
-
-
-
-<div id='d90087a5-3e92-466f-9a60-3fbdcc24fe8f'></div>
-
-
-
-
-
-
 
 
 ```python
 
 ```
+
+    [NbConvertApp] Converting notebook Neuro_imaging_data_sim.ipynb to markdown
+    [NbConvertApp] Writing 17442699 bytes to Neuro_imaging_data_sim.md
+
+
+
+```python
+!ls
+```
+
+    Neuro_imaging_data_sim.ipynb  Neuro_imaging_data_sim.md  sample_data
+
